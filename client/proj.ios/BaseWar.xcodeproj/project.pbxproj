@@ -699,29 +699,6 @@
 		43594E7617CE674200A07BF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43594E7517CE674200A07BF0 /* UIKit.framework */; };
 		43594E7817CE674200A07BF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43594E7717CE674200A07BF0 /* Foundation.framework */; };
 		43594E7A17CE674200A07BF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43594E7917CE674200A07BF0 /* CoreGraphics.framework */; };
-		438E823A17DC67E000E88B08 /* apple-touch-icon-114x114-precomposed.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E822817DC67E000E88B08 /* apple-touch-icon-114x114-precomposed.png */; };
-		438E823B17DC67E000E88B08 /* apple-touch-icon-144x144-precomposed.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E822917DC67E000E88B08 /* apple-touch-icon-144x144-precomposed.png */; };
-		438E823C17DC67E000E88B08 /* apple-touch-icon-72x72-precomposed.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E822A17DC67E000E88B08 /* apple-touch-icon-72x72-precomposed.png */; };
-		438E823D17DC67E000E88B08 /* apple-touch-icon-precomposed.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E822B17DC67E000E88B08 /* apple-touch-icon-precomposed.png */; };
-		438E823E17DC67E000E88B08 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E822C17DC67E000E88B08 /* Icon-72.png */; };
-		438E823F17DC67E000E88B08 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E822D17DC67E000E88B08 /* Icon-72@2x.png */; };
-		438E824017DC67E000E88B08 /* Icon-Small-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E822E17DC67E000E88B08 /* Icon-Small-20.png */; };
-		438E824117DC67E000E88B08 /* Icon-Small-20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E822F17DC67E000E88B08 /* Icon-Small-20@2x.png */; };
-		438E824217DC67E000E88B08 /* Icon-Small-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E823017DC67E000E88B08 /* Icon-Small-30.png */; };
-		438E824317DC67E000E88B08 /* Icon-Small-30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E823117DC67E000E88B08 /* Icon-Small-30@2x.png */; };
-		438E824417DC67E000E88B08 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E823217DC67E000E88B08 /* Icon-Small-50.png */; };
-		438E824517DC67E000E88B08 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E823317DC67E000E88B08 /* Icon-Small-50@2x.png */; };
-		438E824617DC67E000E88B08 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E823417DC67E000E88B08 /* Icon-Small.png */; };
-		438E824717DC67E000E88B08 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E823517DC67E000E88B08 /* Icon-Small@2x.png */; };
-		438E824817DC67E000E88B08 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E823617DC67E000E88B08 /* Icon.png */; };
-		438E824917DC67E000E88B08 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E823717DC67E000E88B08 /* Icon@2x.png */; };
-		438E824A17DC67E000E88B08 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E823817DC67E000E88B08 /* iTunesArtwork.png */; };
-		438E824B17DC67E000E88B08 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E823917DC67E000E88B08 /* iTunesArtwork@2x.png */; };
-		438E824D17DC685300E88B08 /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E824C17DC685300E88B08 /* icon-40.png */; };
-		438E825017DC690A00E88B08 /* icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E824E17DC690A00E88B08 /* icon-80.png */; };
-		438E825117DC690A00E88B08 /* icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E824F17DC690A00E88B08 /* icon-120.png */; };
-		438E825417DC698D00E88B08 /* icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E825217DC698D00E88B08 /* icon-76.png */; };
-		438E825517DC698D00E88B08 /* icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E825317DC698D00E88B08 /* icon-152.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1889,29 +1866,6 @@
 		43594E7517CE674200A07BF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		43594E7717CE674200A07BF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43594E7917CE674200A07BF0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		438E822817DC67E000E88B08 /* apple-touch-icon-114x114-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-114x114-precomposed.png"; sourceTree = "<group>"; };
-		438E822917DC67E000E88B08 /* apple-touch-icon-144x144-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-144x144-precomposed.png"; sourceTree = "<group>"; };
-		438E822A17DC67E000E88B08 /* apple-touch-icon-72x72-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-72x72-precomposed.png"; sourceTree = "<group>"; };
-		438E822B17DC67E000E88B08 /* apple-touch-icon-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-precomposed.png"; sourceTree = "<group>"; };
-		438E822C17DC67E000E88B08 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		438E822D17DC67E000E88B08 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
-		438E822E17DC67E000E88B08 /* Icon-Small-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-20.png"; sourceTree = "<group>"; };
-		438E822F17DC67E000E88B08 /* Icon-Small-20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-20@2x.png"; sourceTree = "<group>"; };
-		438E823017DC67E000E88B08 /* Icon-Small-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-30.png"; sourceTree = "<group>"; };
-		438E823117DC67E000E88B08 /* Icon-Small-30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-30@2x.png"; sourceTree = "<group>"; };
-		438E823217DC67E000E88B08 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
-		438E823317DC67E000E88B08 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
-		438E823417DC67E000E88B08 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
-		438E823517DC67E000E88B08 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
-		438E823617DC67E000E88B08 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		438E823717DC67E000E88B08 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		438E823817DC67E000E88B08 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
-		438E823917DC67E000E88B08 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
-		438E824C17DC685300E88B08 /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
-		438E824E17DC690A00E88B08 /* icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-80.png"; sourceTree = "<group>"; };
-		438E824F17DC690A00E88B08 /* icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-120.png"; sourceTree = "<group>"; };
-		438E825217DC698D00E88B08 /* icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76.png"; sourceTree = "<group>"; };
-		438E825317DC698D00E88B08 /* icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-152.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3914,29 +3868,6 @@
 		438E822717DC67E000E88B08 /* icon */ = {
 			isa = PBXGroup;
 			children = (
-				438E825217DC698D00E88B08 /* icon-76.png */,
-				438E825317DC698D00E88B08 /* icon-152.png */,
-				438E824E17DC690A00E88B08 /* icon-80.png */,
-				438E824F17DC690A00E88B08 /* icon-120.png */,
-				438E824C17DC685300E88B08 /* icon-40.png */,
-				438E822817DC67E000E88B08 /* apple-touch-icon-114x114-precomposed.png */,
-				438E822917DC67E000E88B08 /* apple-touch-icon-144x144-precomposed.png */,
-				438E822A17DC67E000E88B08 /* apple-touch-icon-72x72-precomposed.png */,
-				438E822B17DC67E000E88B08 /* apple-touch-icon-precomposed.png */,
-				438E822C17DC67E000E88B08 /* Icon-72.png */,
-				438E822D17DC67E000E88B08 /* Icon-72@2x.png */,
-				438E822E17DC67E000E88B08 /* Icon-Small-20.png */,
-				438E822F17DC67E000E88B08 /* Icon-Small-20@2x.png */,
-				438E823017DC67E000E88B08 /* Icon-Small-30.png */,
-				438E823117DC67E000E88B08 /* Icon-Small-30@2x.png */,
-				438E823217DC67E000E88B08 /* Icon-Small-50.png */,
-				438E823317DC67E000E88B08 /* Icon-Small-50@2x.png */,
-				438E823417DC67E000E88B08 /* Icon-Small.png */,
-				438E823517DC67E000E88B08 /* Icon-Small@2x.png */,
-				438E823617DC67E000E88B08 /* Icon.png */,
-				438E823717DC67E000E88B08 /* Icon@2x.png */,
-				438E823817DC67E000E88B08 /* iTunesArtwork.png */,
-				438E823917DC67E000E88B08 /* iTunesArtwork@2x.png */,
 			);
 			name = icon;
 			path = ../icon/ios;
@@ -4023,7 +3954,6 @@
 				433FA70E19572E9A00352901 /* unit_robot2low.png in Resources */,
 				433FA60619572E9A00352901 /* achievementslow.png in Resources */,
 				433FA6CF19572E9A00352901 /* sound_attack_sword.caf in Resources */,
-				438E824417DC67E000E88B08 /* Icon-Small-50.png in Resources */,
 				433FA66819572E9A00352901 /* effects2.plist in Resources */,
 				433FA62A19572E9A00352901 /* botanic_dog1low.png in Resources */,
 				433FA6ED19572E9A00352901 /* unit_darkSaber1low.plist in Resources */,
@@ -4035,12 +3965,10 @@
 				433FA71C19572E9A00352901 /* unit_tank1.png in Resources */,
 				433FA6E719572E9A00352901 /* unit_base.plist in Resources */,
 				433FA71A19572E9A00352901 /* unit_soldier3low.png in Resources */,
-				438E825417DC698D00E88B08 /* icon-76.png in Resources */,
 				433FA66C19572E9A00352901 /* flare_antlion1.plist in Resources */,
 				433FA72E19572E9A00352901 /* unit_viking1low.png in Resources */,
 				433FA69E19572E9A00352901 /* sheeplow.png in Resources */,
 				433FA66919572E9A00352901 /* effects2.png in Resources */,
-				438E825517DC698D00E88B08 /* icon-152.png in Resources */,
 				433FA61F19572E9A00352901 /* botanic_daemon2.plist in Resources */,
 				433FA70519572E9A00352901 /* unit_pinkKnight3low.plist in Resources */,
 				433FA66D19572E9A00352901 /* flare_antlion1.png in Resources */,
@@ -4069,13 +3997,11 @@
 				433FA64519572E9A00352901 /* botanic_priest2low.plist in Resources */,
 				433FA6FC19572E9A00352901 /* unit_pinkKnight1.png in Resources */,
 				433FA68119572E9A00352901 /* flare_troll2.png in Resources */,
-				438E823E17DC67E000E88B08 /* Icon-72.png in Resources */,
 				433FA6BA19572E9A00352901 /* sound_game_won.ogg in Resources */,
 				433FA69F19572E9A00352901 /* slime1.plist in Resources */,
 				433FA6A519572E9A00352901 /* sound_attack_antlion.ogg in Resources */,
 				433FA68A19572E9A00352901 /* guilow.plist in Resources */,
 				433FA6E419572E9A00352901 /* unit_baron2.png in Resources */,
-				438E824B17DC67E000E88B08 /* iTunesArtwork@2x.png in Resources */,
 				433FA64619572E9A00352901 /* botanic_priest2low.png in Resources */,
 				433FA64719572E9A00352901 /* botanic_priest3.plist in Resources */,
 				433FA60319572E9A00352901 /* achievements.plist in Resources */,
@@ -4097,7 +4023,6 @@
 				433FA6FF19572E9A00352901 /* unit_pinkKnight2.plist in Resources */,
 				432F963E180891B2001E841C /* Default-568h@2x.png in Resources */,
 				433FA67A19572E9A00352901 /* flare_skelet2low.plist in Resources */,
-				438E824817DC67E000E88B08 /* Icon.png in Resources */,
 				433FA69119572E9A00352901 /* noScale.plist in Resources */,
 				433FA67919572E9A00352901 /* flare_skelet2.png in Resources */,
 				433FA67819572E9A00352901 /* flare_skelet2.plist in Resources */,
@@ -4111,7 +4036,6 @@
 				433FA69219572E9A00352901 /* noScale.png in Resources */,
 				433FA67719572E9A00352901 /* flare_skelet1low.png in Resources */,
 				433FA69919572E9A00352901 /* projectileslow.plist in Resources */,
-				438E824A17DC67E000E88B08 /* iTunesArtwork.png in Resources */,
 				433FA66719572E9A00352901 /* effects1low.png in Resources */,
 				433FA68019572E9A00352901 /* flare_troll2.plist in Resources */,
 				433FA6C819572E9A00352901 /* sound_attack_golem.caf in Resources */,
@@ -4119,7 +4043,6 @@
 				433FA66219572E9A00352901 /* defector1low.plist in Resources */,
 				433FA6F219572E9A00352901 /* unit_darkSaber2low.png in Resources */,
 				433FA6F119572E9A00352901 /* unit_darkSaber2low.plist in Resources */,
-				438E824217DC67E000E88B08 /* Icon-Small-30.png in Resources */,
 				433FA68619572E9A00352901 /* golem1low.plist in Resources */,
 				433FA6C219572E9A00352901 /* sound_attack_daemon.caf in Resources */,
 				433FA67019572E9A00352901 /* flare_antlion2.plist in Resources */,
@@ -4128,7 +4051,6 @@
 				433FA66119572E9A00352901 /* defector1.png in Resources */,
 				433FA61A19572E9A00352901 /* botanic_archer2low.png in Resources */,
 				433FA68C19572E9A00352901 /* labelAtlasHitpoints.png in Resources */,
-				438E823D17DC67E000E88B08 /* apple-touch-icon-precomposed.png in Resources */,
 				433FA68319572E9A00352901 /* flare_troll2low.png in Resources */,
 				433FA70D19572E9A00352901 /* unit_robot2low.plist in Resources */,
 				433FA6B719572E9A00352901 /* sound_battle1.ogg in Resources */,
@@ -4142,13 +4064,11 @@
 				433FA6C619572E9A00352901 /* sound_attack_flaretroll.caf in Resources */,
 				433FA63E19572E9A00352901 /* botanic_mage1low.png in Resources */,
 				433FA66F19572E9A00352901 /* flare_antlion1low.png in Resources */,
-				438E823B17DC67E000E88B08 /* apple-touch-icon-144x144-precomposed.png in Resources */,
 				433FA6D619572E9A00352901 /* sound_menu1.caf in Resources */,
 				433FA61519572E9A00352901 /* botanic_archer1low.plist in Resources */,
 				433FA71819572E9A00352901 /* unit_soldier3.png in Resources */,
 				433FA60D19572E9A00352901 /* background2low.plist in Resources */,
 				433FA6AC19572E9A00352901 /* sound_attack_flaretroll.ogg in Resources */,
-				438E825017DC690A00E88B08 /* icon-80.png in Resources */,
 				433FA69519572E9A00352901 /* preLoadlow.plist in Resources */,
 				433FA70C19572E9A00352901 /* unit_robot2.png in Resources */,
 				433FA6AA19572E9A00352901 /* sound_attack_dog.ogg in Resources */,
@@ -4158,7 +4078,6 @@
 				433FA6B019572E9A00352901 /* sound_attack_hammer.ogg in Resources */,
 				433FA6CA19572E9A00352901 /* sound_attack_hammer.caf in Resources */,
 				433FA65E19572E9A00352901 /* buttons5low.png in Resources */,
-				438E825117DC690A00E88B08 /* icon-120.png in Resources */,
 				433FA68519572E9A00352901 /* golem1.png in Resources */,
 				433FA60C19572E9A00352901 /* background2.png in Resources */,
 				433FA6EC19572E9A00352901 /* unit_darkSaber1.png in Resources */,
@@ -4169,7 +4088,6 @@
 				433FA72A19572E9A00352901 /* unit_troll1low.png in Resources */,
 				433FA70219572E9A00352901 /* unit_pinkKnight2low.png in Resources */,
 				433FA69419572E9A00352901 /* preLoad.png in Resources */,
-				438E824717DC67E000E88B08 /* Icon-Small@2x.png in Resources */,
 				433FA65619572E9A00352901 /* buttons3low.png in Resources */,
 				433FA65019572E9A00352901 /* buttons2.png in Resources */,
 				433FA60519572E9A00352901 /* achievementslow.plist in Resources */,
@@ -4188,8 +4106,6 @@
 				433FA6D819572E9A00352901 /* unit_archer1.png in Resources */,
 				433FA6D719572E9A00352901 /* unit_archer1.plist in Resources */,
 				433FA6C719572E9A00352901 /* sound_attack_giant.caf in Resources */,
-				438E824317DC67E000E88B08 /* Icon-Small-30@2x.png in Resources */,
-				438E824917DC67E000E88B08 /* Icon@2x.png in Resources */,
 				433FA70419572E9A00352901 /* unit_pinkKnight3.png in Resources */,
 				433FA65919572E9A00352901 /* buttons4low.plist in Resources */,
 				433FA72D19572E9A00352901 /* unit_viking1low.plist in Resources */,
@@ -4204,7 +4120,6 @@
 				433FA61719572E9A00352901 /* botanic_archer2.plist in Resources */,
 				433FA6F419572E9A00352901 /* unit_minion1.png in Resources */,
 				433FA68E19572E9A00352901 /* modernSoldier.png in Resources */,
-				438E823C17DC67E000E88B08 /* apple-touch-icon-72x72-precomposed.png in Resources */,
 				433FA65B19572E9A00352901 /* buttons5.plist in Resources */,
 				433FA64419572E9A00352901 /* botanic_priest2.png in Resources */,
 				433FA63C19572E9A00352901 /* botanic_mage1.png in Resources */,
@@ -4250,10 +4165,7 @@
 				433FA72B19572E9A00352901 /* unit_viking1.plist in Resources */,
 				433FA65719572E9A00352901 /* buttons4.plist in Resources */,
 				433FA66E19572E9A00352901 /* flare_antlion1low.plist in Resources */,
-				438E823A17DC67E000E88B08 /* apple-touch-icon-114x114-precomposed.png in Resources */,
-				438E824517DC67E000E88B08 /* Icon-Small-50@2x.png in Resources */,
 				433FA61B19572E9A00352901 /* botanic_daemon1.plist in Resources */,
-				438E824017DC67E000E88B08 /* Icon-Small-20.png in Resources */,
 				433FA6AB19572E9A00352901 /* sound_attack_explosion.ogg in Resources */,
 				433FA6A319572E9A00352901 /* sound_animnation_explosion.ogg in Resources */,
 				433FA6EF19572E9A00352901 /* unit_darkSaber2.plist in Resources */,
@@ -4263,7 +4175,6 @@
 				433FA66419572E9A00352901 /* effects1.plist in Resources */,
 				433FA6BC19572E9A00352901 /* sound_menu1.ogg in Resources */,
 				433FA71119572E9A00352901 /* unit_soldier1low.plist in Resources */,
-				438E824617DC67E000E88B08 /* Icon-Small.png in Resources */,
 				433FA60F19572E9A00352901 /* background3.plist in Resources */,
 				433FA70019572E9A00352901 /* unit_pinkKnight2.png in Resources */,
 				433FA6CB19572E9A00352901 /* sound_attack_robot.caf in Resources */,
@@ -4291,7 +4202,6 @@
 				433FA71519572E9A00352901 /* unit_soldier2low.plist in Resources */,
 				433FA64D19572E9A00352901 /* buttons1low.plist in Resources */,
 				433FA72119572E9A00352901 /* unit_tank2low.plist in Resources */,
-				438E824117DC67E000E88B08 /* Icon-Small-20@2x.png in Resources */,
 				433FA69D19572E9A00352901 /* sheeplow.plist in Resources */,
 				433FA70719572E9A00352901 /* unit_robot1.plist in Resources */,
 				433FA72019572E9A00352901 /* unit_tank2.png in Resources */,
@@ -4318,7 +4228,6 @@
 				433FA69819572E9A00352901 /* projectiles.png in Resources */,
 				433FA63219572E9A00352901 /* botanic_femmage1low.png in Resources */,
 				433FA6DA19572E9A00352901 /* unit_archer1low.png in Resources */,
-				438E823F17DC67E000E88B08 /* Icon-72@2x.png in Resources */,
 				433FA67D19572E9A00352901 /* flare_troll1.png in Resources */,
 				433FA61E19572E9A00352901 /* botanic_daemon1low.png in Resources */,
 				433FA6C919572E9A00352901 /* sound_attack_gun.caf in Resources */,
@@ -4336,7 +4245,6 @@
 				433FA68D19572E9A00352901 /* modernSoldier.plist in Resources */,
 				433FA71719572E9A00352901 /* unit_soldier3.plist in Resources */,
 				433FA67619572E9A00352901 /* flare_skelet1low.plist in Resources */,
-				438E824D17DC685300E88B08 /* icon-40.png in Resources */,
 				433FA62919572E9A00352901 /* botanic_dog1low.plist in Resources */,
 				433FA70619572E9A00352901 /* unit_pinkKnight3low.png in Resources */,
 				433FA60919572E9A00352901 /* background1low.plist in Resources */,
@@ -4806,7 +4714,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -4826,8 +4734,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\\\\\"$(SRCROOT)/libs/cocos2dx/platform/third_party/ios/libraries\\\\\\\"",
-					"\\\\\\\"$(SRCROOT)/libs/libwebsockets/ios/lib\\\\\\\"",
+					"\"$(SRCROOT)/libs/cocos2dx/platform/third_party/ios/libraries\"",
+					"\"$(SRCROOT)/libs/libwebsockets/ios/lib\"",
 					/Users/benjamin/projects/OSX/BaseWar/proj.ios/libs/libwebsockets/ios/lib,
 					/Users/benjamin/projects/OSX/BaseWar/proj.ios/libs/cocos2dx/platform/third_party/ios/libraries,
 				);
@@ -4850,7 +4758,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -4869,8 +4777,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\\\\\"$(SRCROOT)/libs/cocos2dx/platform/third_party/ios/libraries\\\\\\\"",
-					"\\\\\\\"$(SRCROOT)/libs/libwebsockets/ios/lib\\\\\\\"",
+					"\"$(SRCROOT)/libs/cocos2dx/platform/third_party/ios/libraries\"",
+					"\"$(SRCROOT)/libs/libwebsockets/ios/lib\"",
 					/Users/benjamin/projects/OSX/BaseWar/proj.ios/libs/libwebsockets/ios/lib,
 					/Users/benjamin/projects/OSX/BaseWar/proj.ios/libs/cocos2dx/platform/third_party/ios/libraries,
 				);
