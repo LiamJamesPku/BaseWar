@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08E805D91BA12E7000C46A73 /* CCSprite_touch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08E805D71BA12E7000C46A73 /* CCSprite_touch.cpp */; };
 		432F963E180891B2001E841C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 432F963D180891B2001E841C /* Default-568h@2x.png */; };
 		433FA57E19572E9A00352901 /* Achievement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 433FA32219572E9900352901 /* Achievement.cpp */; };
 		433FA57F19572E9A00352901 /* AchievementFastWin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 433FA32419572E9900352901 /* AchievementFastWin.cpp */; };
@@ -712,6 +713,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08E805D71BA12E7000C46A73 /* CCSprite_touch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCSprite_touch.cpp; sourceTree = "<group>"; };
+		08E805D81BA12E7000C46A73 /* CCSprite_touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSprite_touch.h; sourceTree = "<group>"; };
 		432F963D180891B2001E841C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		433FA32219572E9900352901 /* Achievement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Achievement.cpp; sourceTree = "<group>"; };
 		433FA32319572E9900352901 /* Achievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Achievement.h; sourceTree = "<group>"; };
@@ -2234,6 +2237,8 @@
 				433FA44C19572E9900352901 /* ScrollLayer.h */,
 				433FA44D19572E9900352901 /* SpriteAnimationType.h */,
 				433FA44E19572E9900352901 /* SpriteTags.h */,
+				08E805D71BA12E7000C46A73 /* CCSprite_touch.cpp */,
+				08E805D81BA12E7000C46A73 /* CCSprite_touch.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4573,6 +4578,7 @@
 				434DDF9517D51870001F5ECD /* CCComController.cpp in Sources */,
 				434DDF5917D51870001F5ECD /* ccUtils.cpp in Sources */,
 				433FA5E919572E9A00352901 /* Blood.cpp in Sources */,
+				08E805D91BA12E7000C46A73 /* CCSprite_touch.cpp in Sources */,
 				433FA5D619572E9A00352901 /* Troll.cpp in Sources */,
 				434DDF7817D51870001F5ECD /* SimpleAudioEngine.mm in Sources */,
 				434DDF0317D51870001F5ECD /* CCAutoreleasePool.cpp in Sources */,

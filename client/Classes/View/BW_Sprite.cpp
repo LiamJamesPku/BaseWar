@@ -28,9 +28,11 @@ BW_Sprite::BW_Sprite(std::string image, float height, bool initLable, bool fadeI
 	_numAttackAnimationPicture = 0;
 	_animationDoDmgPicture = 0;
 
-	this->_sprite = CCSprite::createWithSpriteFrame(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(image.c_str()));
+	this->_sprite = CCSprite_touch::createWithSpriteFrame(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName(image.c_str()));
 	_currentScale = height / getContentSize().getHeight();
 	_sprite->retain();
+    
+    
 	this->_sprite->setScale(_currentScale);
 	//standard value if not replaced
 	_hitBox = BW_Rect(getContentSize().getWidth() * _currentScale, getContentSize().getHeight() * _currentScale);
@@ -59,6 +61,8 @@ BW_Sprite::BW_Sprite(std::string image, float height, bool initLable, bool fadeI
 	_attackAnimationSpeed = 0.2; //standard values, should be overwritten at fillAttackAnimationPictures
 
 	//speed = 2.8f / 14.0f This animation contains 14 frames, will continuous 2.8 seconds.
+    
+    
 }
 void BW_Sprite::doNotKillSpriteAndSlowIdle() {
 	_doNotKillSprite = true;
@@ -478,6 +482,8 @@ void BW_Sprite::spriteMoveTo(BW_Point location, float speed, bool setAngle) {
 
 	setAnimation(MOVE);
 	_speed = speed * Model::getInstance()->getGameSpeed();
+
+    
 }
 
 void BW_Sprite::spriteMoveFinished(CCNode* sender) {

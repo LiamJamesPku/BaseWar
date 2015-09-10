@@ -14,6 +14,7 @@
 #include "../Tools/BW_Rect.h"
 #include "SpriteAnimationType.h"
 #include "Healthbar.h"
+#include "CCSprite_touch.h"
 
 #include "cocos2d.h"
 using namespace cocos2d;
@@ -107,7 +108,7 @@ protected:
 	std::string _image;
 	float _height;
 
-	cocos2d::CCSprite* _sprite;
+    CCSprite_touch * _sprite;
 	void addManaBarToHealthBar();
 	void updateVisibleOfHealthBar();
 
