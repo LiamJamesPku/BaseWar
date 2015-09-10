@@ -54,6 +54,7 @@ BW_Sprite::BW_Sprite(std::string image, float height, bool initLable, bool fadeI
 		_sprite->runAction(CCFadeIn::create(0.1));
 
 	_movingTo = BW_Point(-124.123, -124.123); //just set a random point
+
 	//we will never use in the game
 	_moveAnimationSpeed = 0.2; //standard values, should be overwritten at fillMoveAnimationPictures
 	_moveAnimationSpeedUsed = 0.2; //standard values, should be overwritten at fillMoveAnimationPictures
@@ -439,6 +440,7 @@ void BW_Sprite::updateMovePosition(float dt) {
 }
 
 void BW_Sprite::setPosition(BW_Point p) {
+    CCLOG("x = %f y = %f", p.x, p.y);
 	this->_sprite->setPosition(ccp(p.x, p.y));
 }
 BW_Point BW_Sprite::getPositionBW() {

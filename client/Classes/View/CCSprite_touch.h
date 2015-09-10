@@ -14,12 +14,17 @@
 
 using namespace cocos2d;
 
+class Unit;
+
+
 class CCSprite_touch : public CCSprite , public CCTargetedTouchDelegate {
 
 public:
     
-    int _touchCount;
-    void addTouchCallBack();
+    int _touchCount; //测试用，可以删除
+    
+    Unit *_unit; //对应的作战单元
+
     
     static CCSprite_touch* createWithSpriteFrame(CCSpriteFrame *pSpriteFrame);
     

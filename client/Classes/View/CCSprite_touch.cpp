@@ -7,6 +7,7 @@
 //
 
 #include "CCSprite_touch.h"
+#include "../Model/Model.h"
 
 //需要重写create方法，不能使用父类的，不然添加触摸事件会崩溃
 CCSprite_touch* CCSprite_touch::createWithSpriteFrame(CCSpriteFrame *pSpriteFrame) {
@@ -65,4 +66,9 @@ void CCSprite_touch::ccTouchMoved(cocos2d::CCTouch* touch, cocos2d::CCEvent* eve
 void CCSprite_touch::ccTouchEnded(cocos2d::CCTouch* pTouch, cocos2d::CCEvent* event)
 {
     CCLOG("点击结束");
+    if (_unit->isMoveAble()) {
+        CCLOG("ccspriteTouch测试%p", _unit);
+        Model::getInstance()->setSelectedUnit(_unit);
+    }
+    
 }

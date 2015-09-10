@@ -13,6 +13,8 @@
 #include "../../Sound/SoundHandler.h"
 #include "../../Constants.h"
 
+#include "CCSprite_touch.h"
+
 Unit::Unit(std::string image, float height, float hitpoints, Attack* attack, Armour* armour, std::list<Skill*> skills, float mana, float manaRegPerSeconds,
 		bool fadeIn) :
 		BW_Sprite(image, height, true, fadeIn) {
@@ -56,6 +58,10 @@ Unit::Unit(std::string image, float height, float hitpoints, Attack* attack, Arm
 	_manaRegUpgradeMultiplier = 1.20;
 
 	_lastManaUpdate = _created = BW_Time::getMilliSecondsCached();
+
+    int d = _sprite->_touchCount;
+            _sprite->_unit = this;
+            CCLOG("unit测试%p",this);
 }
 
 int Unit::removeADebuff() {
@@ -197,13 +203,15 @@ void Unit::updateMana() {
 }
 
 void Unit::update() {
-	float life_time = BW_Time::getMilliSecondsCached() - _created;
-	float max_life_time = _roundsToLive * Model::getInstance()->getSpawnSleep() * 1000; //to get milliseconds
-	if(life_time > max_life_time){
-		remove();
-		return;	//unit will be removed, abort all other updates
-	}
-	updateLifeDurationIndicator(1 - (life_time / max_life_time));
+    
+    //每个单元有指定的活动时间
+//	float life_time = BW_Time::getMilliSecondsCached() - _created;
+//	float max_life_time = _roundsToLive * Model::getInstance()->getSpawnSleep() * 1000; //to get milliseconds
+//	if(life_time > max_life_time){
+//		remove();
+//		return;	//unit will be removed, abort all other updates
+//	}
+//	updateLifeDurationIndicator(1 - (life_time / max_life_time));
 
 
 	updateVisibleOfHealthBar();
@@ -262,8 +270,17 @@ void Unit::doSomethingIntelligent() {
 		return;
 	}
 
-	if (!this->attack(target))
-		this->moveTo(target->getPositionBW());
+//	if (!this->attack(target))
+//		this->moveTo(target->getPositionBW());
+    
+    
+//    if (!this->attack(target) && Model::getInstance()->getSelectedUnit() != this) {
+//        this->moveTo(BW_Point(3000, 1500));
+//    } else {
+//        this->doIdle();
+//    }
+//    CCLOG("选中的unit=%p", Model::getInstance()->getSelectedUnit());
+//    CCLOG("当前的unit=%p", this);
 }
 
 void Unit::moveTo(BW_Point location) {

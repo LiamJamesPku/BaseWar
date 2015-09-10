@@ -369,6 +369,13 @@ void InGameGameLayer::ccTouchesBegan(CCSet * pTouches, CCEvent * pEvent) {
 	initialTouch = touch->getLocation();
 
 	_2fingerInit = false;
+    
+    Unit *unit = Model::getInstance()->getSelectedUnit();
+    if (unit && unit->isMoveAble()) {
+        float x = touch->getLocation().x;
+        float y = touch->getLocation().y;
+        unit->moveTo(BW_Point(x,y));
+    }
 }
 
 void InGameGameLayer::ccTouchesMoved(CCSet * pTouches, CCEvent* event) {

@@ -113,6 +113,14 @@ public:
 	}
 
 	void processAddedUnits();
+    
+    void setSelectedUnit(Unit *unit) {
+        _selectedUnit = unit;
+    }
+    
+    Unit* getSelectedUnit() {
+        return _selectedUnit;
+    }
 
 private:
 	std::list<Unit*> _addedUnits;
@@ -155,6 +163,8 @@ private:
 	Difficulty _difficulty;
 
 	bool _tutorialFinished;
+    
+    Unit *_selectedUnit;
 };
 
 #endif /* MODEL_H_ */

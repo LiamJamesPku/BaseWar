@@ -31,14 +31,15 @@ Model::Model() {
 	CCLOG("2");
 	_fieldWidth = 10000;
 	_fieldHeigth = 3000;
-	_spawnSleep = 20;
+//	_spawnSleep = 20;
+    _spawnSleep = 5;
 
 	_minZoom = cocos2d::CCDirector::sharedDirector()->getWinSize().width / _fieldWidth;
 
 	_maxZoom = _minZoom * 15.0;
 
 	//init spawn point
-	_leftArmy = new Army(LEFT, BW_Point(0, _fieldHeigth / 2));
+	_leftArmy = new Army(LEFT, BW_Point(2000, _fieldHeigth / 2));
 	_rightArmy = new Army(RIGHT, BW_Point(_fieldWidth, _fieldHeigth / 2));
 	_gameSpeed = 1; //standard = 1
 	_middleControl = NONE;
@@ -57,6 +58,8 @@ Model::Model() {
 		//phone
 		_GUIElementScaleMultiplicator = (float) cocos2d::CCDevice::getDPI() / 220.0f; //240 is sony ericson arc s dpi, i am developing on
 	}
+    
+    _selectedUnit = NULL;
 }
 
 void Model::setPlayer1RaceId(int race) {
@@ -377,17 +380,17 @@ void Model::processAddedUnits() {
 	}
 
 	//set new position due to attack range
-	for (std::list<Unit*>::iterator it = _addedUnits.begin(); it != _addedUnits.end(); ++it) {
-		Unit* unit = (*it);
-		BW_Point newPos = unit->getPositionBW();
-
-		if (unit->getArmyType() == LEFT)
-			newPos.x = minLeftPos - unit->getAttack()->getAttackRange() / 4;
-		else
-			newPos.x = maxRightPos + unit->getAttack()->getAttackRange() / 4;
-
-		unit->setPosition(newPos);
-	}
+//	for (std::list<Unit*>::iterator it = _addedUnits.begin(); it != _addedUnits.end(); ++it) {
+//		Unit* unit = (*it);
+//		BW_Point newPos = unit->getPositionBW();
+//
+//		if (unit->getArmyType() == LEFT)
+//			newPos.x = minLeftPos - unit->getAttack()->getAttackRange() / 4;
+//		else
+//			newPos.x = maxRightPos + unit->getAttack()->getAttackRange() / 4;
+//
+//		unit->setPosition(newPos);
+//	}
 
 	_addedUnits.clear();
 }
