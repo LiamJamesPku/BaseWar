@@ -59,9 +59,7 @@ Unit::Unit(std::string image, float height, float hitpoints, Attack* attack, Arm
 
 	_lastManaUpdate = _created = BW_Time::getMilliSecondsCached();
 
-    int d = _sprite->_touchCount;
-            _sprite->_unit = this;
-            CCLOG("unit测试%p",this);
+    _sprite->_unit = this;
 }
 
 int Unit::removeADebuff() {
@@ -259,17 +257,42 @@ void Unit::updateEffects() {
 }
 
 void Unit::doSomethingIntelligent() {
+    
+    if (Model::getInstance()->getSelectedUnit() != this) {
+        Unit* target = _attack->isHeal() ? this->getHealTarget() : this->getNearestEnemyUnit();
+        
+        if (target == NULL && _attack->isHeal())
+            target = this->getNearestEnemyUnit();
+        
+        if (target == NULL) {
+            this->doIdle();
+            return;
+        }
+        
+        //攻击目标 ret == true 表示正在攻击目标 false表示距离太远无法攻击目标
+        bool ret = this->attack(target);
+        
+        //如果距离太远并且是右方军队，向target前进
+        if (ret == false) {
+            this->moveTo(target->getPositionBW());
+        }
+    }
+    
+    else {
+        
+        if (isActionsFinished()) {
+            Unit* target = getNearestEnemyUnit();
+            if (target) {
+                attack(target);
+            }
+        }
+        //补血
+        if (getPositionBW().x < 2000) {
+            _hitpoints = _maxHitpoints;
+        }
+    }
 
-	Unit* target = _attack->isHeal() ? this->getHealTarget() : this->getNearestEnemyUnit();
-
-	if (target == NULL && _attack->isHeal())
-		target = this->getNearestEnemyUnit();
-
-	if (target == NULL) {
-		this->doIdle();
-		return;
-	}
-
+	
 //	if (!this->attack(target))
 //		this->moveTo(target->getPositionBW());
     

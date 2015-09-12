@@ -436,11 +436,17 @@ void BW_Sprite::updateMovePosition(float dt) {
 
 	//if (res == -2) no problem
 	setPosition(newPos);
+    
+    float dx = _movingTo.x - currentPosition.x;
+    float dy = _movingTo.y - currentPosition.y;
+    if (dx == 0 && dy == 0) {
+        doIdle();
+    }
 
 }
 
 void BW_Sprite::setPosition(BW_Point p) {
-    CCLOG("x = %f y = %f", p.x, p.y);
+//    CCLOG("x = %f y = %f", p.x, p.y);
 	this->_sprite->setPosition(ccp(p.x, p.y));
 }
 BW_Point BW_Sprite::getPositionBW() {
@@ -479,17 +485,22 @@ void BW_Sprite::doIdle() {
 }
 
 void BW_Sprite::spriteMoveTo(BW_Point location, float speed, bool setAngle) {
+    
 	_movingTo = location;
 	setLookingTo(_movingTo, setAngle);
 
 	setAnimation(MOVE);
 	_speed = speed * Model::getInstance()->getGameSpeed();
 
+    _sprite->setTag(HASACTION);
     
 }
 
 void BW_Sprite::spriteMoveFinished(CCNode* sender) {
 	sender->setTag(ACTIONSTOPPED); //we set the tag to detect stopped actions
+    
+    //停止
+    doIdle();
 }
 
 bool BW_Sprite::isActionsFinished() {

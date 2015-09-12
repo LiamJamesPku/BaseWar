@@ -26,7 +26,7 @@ Player::Player(std::string name, Race* race, bool AI, bool network) {
 	_wasShownAsAIInNetworkGame = false;
 	_fakeNetworkPlayerStrength = ((float) Tools::random(5, 10)) / 10.0f; //something betwee 0.5 and 1
 
-	_gold = 200; //start gold
+	_gold = 2000; //start gold
 	if (Model::getInstance()->getGameMode() == TUTORIAL) {
 		_gold = 450; //to buy the whole first tier and speed things up at tutorial
 	}

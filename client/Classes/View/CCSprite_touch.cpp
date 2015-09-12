@@ -66,7 +66,7 @@ void CCSprite_touch::ccTouchMoved(cocos2d::CCTouch* touch, cocos2d::CCEvent* eve
 void CCSprite_touch::ccTouchEnded(cocos2d::CCTouch* pTouch, cocos2d::CCEvent* event)
 {
     CCLOG("点击结束");
-    if (_unit->isMoveAble()) {
+    if (_unit->isMoveAble() && _unit->getArmyType() == LEFT) {
         CCLOG("ccspriteTouch测试%p", _unit);
         Model::getInstance()->setSelectedUnit(_unit);
     }

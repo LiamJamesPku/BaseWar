@@ -155,8 +155,12 @@ void InGameGameLayer::spriteLocationUpdate(float dt) {
 void InGameGameLayer::performAutocam(float dt) {
 	if (!_autoCam)
 		return;
-	Unit* unit = Model::getInstance()->getMyArmy(Model::getInstance()->getAutoCamTarget())->getMostProgressUnit();
-	if (unit == NULL)
+//	Unit* unit = Model::getInstance()->getMyArmy(Model::getInstance()->getAutoCamTarget())->getMostProgressUnit();
+    
+    //取选中的单元
+    Unit* unit = Model::getInstance()->getSelectedUnit();
+    //如果单元不存在或者 ，挂了就return掉
+	if (unit == NULL || unit->getHitpoints() <= 0 || unit->getHitpoints() > unit->getMaxHitpoints())
 		return;
 
 	float speed = 1600;
@@ -371,11 +375,24 @@ void InGameGameLayer::ccTouchesBegan(CCSet * pTouches, CCEvent * pEvent) {
 	_2fingerInit = false;
     
     Unit *unit = Model::getInstance()->getSelectedUnit();
+    BW_Point leftDown = getShownRect().leftDown;
+    BW_Point rightUp = getShownRect().rightUp;
+    
     if (unit && unit->isMoveAble()) {
-        float x = touch->getLocation().x;
-        float y = touch->getLocation().y;
+        
+        float x = touch->getLocation().x / getScaleX() + leftDown.x;
+        float y = touch->getLocation().y / getScaleY() + leftDown.y;
+        CCLOG("点击的位置x=%f y=%f", x, y);
         unit->moveTo(BW_Point(x,y));
+        
+//        Model::getInstance()->setSelectedUnit(NULL);
+        
     }
+//    CCLOG("屏幕坐标：点击点x=%f y=%f", touch->getLocation().x, touch->getLocation().y);
+//    CCLOG("缩略：x=%f y=%f", getScaleX(), getScaleY());
+//    CCLOG("游戏坐标：x=%f y=%f", touch->getLocation().x / getScaleX(), touch->getLocation().y / getScaleY());
+//    CCLOG("起始点：x=%f y=%f", leftDown.x, leftDown.y);
+//    CCLOG("顶部点：x=%f y=%f", rightUp.x, rightUp.y);
 }
 
 void InGameGameLayer::ccTouchesMoved(CCSet * pTouches, CCEvent* event) {
@@ -434,15 +451,16 @@ void InGameGameLayer::zoom(float zoom) {
 	if (zoom < Model::getInstance()->getMinZoom())
 		zoom = Model::getInstance()->getMinZoom();
 
+    //暂时关闭
 	//if we zoom in, we have to look at the unit if autocam and if already watching it
-	if (getScale() < zoom && _autoCam && _autoCamWatchingAtTarget) {
-		Unit* unit = Model::getInstance()->getMyArmy(Model::getInstance()->getAutoCamTarget())->getMostProgressUnit();
-		if (unit != NULL) {
-			setScale(zoom);
-			watchAt(unit->getPositionBW());
-			return;
-		}
-	}
+//	if (getScale() < zoom && _autoCam && _autoCamWatchingAtTarget) {
+//		Unit* unit = Model::getInstance()->getMyArmy(Model::getInstance()->getAutoCamTarget())->getMostProgressUnit();
+//		if (unit != NULL) {
+//			setScale(zoom);
+//			watchAt(unit->getPositionBW());
+//			return;
+//		}
+//	}
 
 	BW_Point watching = watchingAt();
 	setScale(zoom);

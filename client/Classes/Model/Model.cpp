@@ -34,7 +34,8 @@ Model::Model() {
 //	_spawnSleep = 20;
     _spawnSleep = 5;
 
-	_minZoom = cocos2d::CCDirector::sharedDirector()->getWinSize().width / _fieldWidth;
+//	_minZoom = cocos2d::CCDirector::sharedDirector()->getWinSize().width / _fieldWidth;
+    _minZoom = cocos2d::CCDirector::sharedDirector()->getWinSize().height / _fieldHeigth;
 
 	_maxZoom = _minZoom * 15.0;
 

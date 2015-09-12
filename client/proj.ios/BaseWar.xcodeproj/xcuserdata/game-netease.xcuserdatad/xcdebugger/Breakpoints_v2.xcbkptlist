@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../Classes/View/BW_Sprite.cpp"
-            timestampString = "463581424.504129"
+            filePath = "../Classes/Model/Units/Unit.cpp"
+            timestampString = "463670504.272279"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "442"
-            endingLineNumber = "442"
-            landmarkName = "BW_Sprite::setPosition(BW_Point p)"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
+            landmarkName = "Unit::doSomethingIntelligent()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
