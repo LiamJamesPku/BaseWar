@@ -85,6 +85,7 @@ std::list<Player*> Army::getPlayers() {
 	return _players;
 }
 
+//遍历队列中的玩家
 void Army::spawnUnits() {
 	Player* player = _players.front();
 	_players.pop_front();

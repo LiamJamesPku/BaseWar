@@ -121,6 +121,9 @@ public:
     Unit* getSelectedUnit() {
         return _selectedUnit;
     }
+    
+    //添加作战单元
+    void createMoveableUnit();
 
 private:
 	std::list<Unit*> _addedUnits;

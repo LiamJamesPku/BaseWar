@@ -11,6 +11,15 @@
 #include "../Tools/BW_Time.h"
 #include "Units/Base.h"
 #include "Units/Tower.h"
+
+#include "Units/Soldier.h"
+#include "ProjectileAttack.h"
+#include "./Attacks/ProjectileAttack.h"
+#include "./Attacks/Projectiles/SplashBombProjectile.h"
+#include "./Skills/Skill.h"
+#include "./Skills/RageSkill.h"
+#include "./Armours/HeavyArmour.h"
+
 #include "../Network/NetworkSingleton.h"
 #include "../SceneControl.h"
 #include "../Tools/SupportHandler.h"
@@ -105,6 +114,18 @@ void Model::initializeGameField() {
 	_rightArmy->addUnit(tower);
 	tower->setPosition(BW_Point(towerRigthX, _fieldHeigth / 2));
 	tower->setLookingTo(LEFT);
+    
+    createMoveableUnit();
+}
+
+//生成小兵
+void Model::createMoveableUnit() {
+    
+    std::list<Skill*> skillList = std::list<Skill*>();
+    skillList.push_back(new RageSkill(10, 0, 1000, 4000, 0.25, 0.25, 0.25));
+    Soldier *soldier = new Soldier(275, 500, 300, new ProjectileAttack(new ProjectileFactory(new SplashBombProjectile(100, 0.5)), 40, 0.5, 600), new HeavyArmour(), skillList, 10, 1);
+    
+    _leftArmy->addUnit(soldier);
 }
 
 void Model::initializePlayer() {
